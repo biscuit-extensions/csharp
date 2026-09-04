@@ -1,0 +1,7 @@
+[extension]
+id = "csharp"
+name = "C#"
+version = "0.1.0"
+description = "C# language support, .NET build runner, and solution management"
+author = "biscuit-extensions"
+icon = "icon.png"
