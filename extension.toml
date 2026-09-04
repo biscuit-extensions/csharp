@@ -1,7 +1,24 @@
 [extension]
 id = "csharp"
 name = "C#"
-version = "0.1.0"
-description = "C# language support, .NET build runner, and solution management"
-author = "biscuit-extensions"
+version = "0.2.0"
+description = ".NET solution and project discovery, dotnet build and test runner, and C# intelligence"
+author = "tomlin7"
 icon = "icon.png"
+
+[dependencies]
+python = [
+    "defusedxml>=0.7.1"
+]
+tools = [
+    "dotnet"
+]
+
+[contributes]
+commands = [
+    { id = "csharp.build", title = "C#: Build Solution" },
+    { id = "csharp.run", title = "C#: Run Startup Project" },
+    { id = "csharp.test", title = "C#: Run Tests" },
+    { id = "csharp.restore", title = "C#: Restore NuGet Packages" },
+    { id = "csharp.clean", title = "C#: Clean Solution" }
+]
